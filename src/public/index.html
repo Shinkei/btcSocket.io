@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BitcoinApp</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+</head>
+<body>
+    <di  v class="container">
+        <div class="header col-sm-12">
+            <div class="row bg-primary">
+                <div class="col-sm-4">
+                    <h1>Market</h1>
+                    <h2 id="market"></h2>
+                </div>
+                <div class="col-sm-4">
+                    <h1>High</h1>
+                    <h2 id="high-count"></h2>
+                </div>
+                <div class="col-sm-4">
+                    <h1>low</h1>
+                    <h2 id="low-count"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="main col-sm-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="text-primary">Recent Trades</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Buy</th>
+                            <td>
+                                <p id="buy"></p>
+                            </td>
+                            <th>Sell</th>
+                            <td>
+                                <p id="sell"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-primary">Trade Volume</h3>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Volume
+                            </th>
+                            <td>
+                                <p id="volume"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
